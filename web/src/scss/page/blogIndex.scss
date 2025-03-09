@@ -1,0 +1,119 @@
+.blogIndex {
+    @apply pt-15;
+
+    &__title {
+        @apply mb-8;
+        h2,h3 {
+            @apply text-secondary-900 mb-0 text-h2;
+        }
+    }
+
+    &__relatedProducts {
+        @apply pt-15 bg-gray-50 pb-8;
+        
+        &__card {
+            @apply mb-9;
+
+            &:hover {
+                .blogIndex__relatedProducts__card__img {
+                    filter: drop-shadow(0 0 0.15rem #001340);
+                    transform: scale(1.01);
+                }
+            }
+    
+            &__author {
+                p {
+                    @apply text-xsm font-normal mb-3;
+                }
+            }
+    
+            &__img {
+                @apply mb-6 h-[223px];
+                @extend .transition;
+    
+                img {
+                    @apply rounded-2xl w-full h-full object-cover object-center;
+                }
+            }
+    
+            &__title {
+                @apply mb-3 text-secondary-900;
+    
+                h3,p,h2 {
+                    @apply mb-0 text-h4 font-semibold;
+                }
+            }
+    
+            &:last-child {
+                @apply mb-0;
+            }
+    
+            &:hover {
+                .blogpage__card__img {
+                    filter: drop-shadow(0 0 0.15rem #001340);
+                }
+            }
+        }
+    
+    }
+
+    &__desc {
+        @apply pb-15;
+    }
+
+    @screen md {
+        @apply pt-15;
+
+        &__relatedProducts {
+            @apply py-15;
+            &__cards {
+                @apply flex flex-wrap -mx-[10px];
+            }
+    
+            &__card {
+                @apply w-1/2 px-[10px] mb-0;
+            }
+        }
+    }
+
+    @screen lg {
+        
+        &__title {
+            @apply mb-16;
+        }
+
+        &__relatedProducts {
+            @apply pb-0;
+            &__card {
+                @apply w-1/3;
+            }
+       }
+
+    }
+
+    @screen xl {
+        @apply pt-30;
+
+        &__desc {
+            @apply pb-30 mb-16;
+        }
+
+        &__title {
+            h3,p {
+                @apply text-xl
+            }
+        }
+
+        &__relatedProducts {
+            @apply pb-[108px] pt-30;
+            &__card {
+                &__title {
+                    h3,p,h2 {
+                        @apply text-h3;
+                    }
+                }
+            }
+        }
+
+    }
+}

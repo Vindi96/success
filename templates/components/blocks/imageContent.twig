@@ -1,0 +1,42 @@
+{% set title = theBlock.blockTitle %}
+{% set desc = theBlock.description %}
+{% set images = theBlock.image.all() %}
+{% set action = theBlock.action %}
+{% set reverse = theBlock.reverseContent %}
+{% set background = theBlock.backgroundColor %}
+{% set label = theBlock.linkLabel %}
+
+<div class="imageContent {% if background | length %}imageContent--bg{% endif %} element--py"> 
+    <div class="container">
+        <div class="imageContent__wrap {% if reverse | length %}imageContent__wrap--reverse{% endif %}" data-fadein> 
+            <div class="imageContent__left">
+                {% if title %}
+                    <div class="imageContent__title blockTitle">
+                        {{title}}
+                    </div>
+                {% endif %}
+                {% if desc %}
+                    <div class="imageContent__desc typography">
+                        {{desc}}
+                    </div>
+                {% endif %}
+                {% if action %}
+                   <div class="imageContent__action">
+                        <a href="{{action.url}}" class="btn btn--small">
+                            <span>{{label}}</span>
+                        </a>
+                    </div> 
+                {% endif %}               
+            </div>
+            <div class="imageContent__right">
+                {% if images %}
+                    {% for img in images %}
+                        <div class="imageContent__img">
+                            <img data-src={{img.url}} src="dist/images/placeholder.jpeg" alt="image-content" class="lazy">
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>

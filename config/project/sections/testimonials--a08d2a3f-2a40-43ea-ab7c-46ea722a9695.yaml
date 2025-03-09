@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 932ae628-f4d7-4209-8748-c29f51dc2574 # Testimonial
+handle: testimonials
+maxAuthors: 1
+name: Testimonials
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  480b27ed-ab52-4d46-9b4f-d4a706c3d3d8: # isgb
+    enabledByDefault: true
+    hasUrls: true
+    template: testimonials/_entry.twig
+    uriFormat: 'testimonials/{slug}'
+type: channel

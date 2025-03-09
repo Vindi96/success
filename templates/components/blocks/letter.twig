@@ -1,0 +1,31 @@
+{% set title = theBlock.blockTitle %}
+{% set desc = theBlock.description %}
+{% set letter = theBlock.letter %}
+
+<div class="letter element--py" >
+    <div class="container">
+        {% if title %}
+            <div class="letter__title blockTitle" data-fadein>
+                {{title}}
+            </div>
+        {% endif %}
+        {% if desc %}
+            <div class="letter__desc typography" data-fadein>
+                {{desc}}
+            </div>
+        {% endif %}     
+    </div>
+    <div class="container-sp">
+    {% if letter %}
+            <div data-fadein class="letter__outer">
+                <div class="letter__holder">
+                    <div class="letter__body">
+                        <div class="letter__body__wrap typography">
+                            {{letter}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    </div>
+</div>

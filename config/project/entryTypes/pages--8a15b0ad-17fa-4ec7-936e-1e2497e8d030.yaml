@@ -1,0 +1,237 @@
+color: null
+fieldLayouts:
+  fc12c1bf-f8ce-4cf7-ab24-ced40aac833f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-19T08:16:06+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: dded99db-0582-47f4-a483-cb01e3540346
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition: null
+            fieldUid: a1eb9028-e06d-463d-8ac8-2e69dcda05b2 # Body
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7567889c-6026-4b48-88d8-a4129cea2fa1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 6161039d-9483-47c1-94d6-98f2ea4f541f
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition: null
+            fieldUid: 8ae091d4-9fdd-47f5-b698-e76230bd8434 # Hero Title
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 20e2069f-f84c-429e-8129-3c5c07b67fcd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition: null
+            fieldUid: 211cf806-db73-4b80-9926-5e26a4652c30 # Hero Type
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 195aa3fb-dca8-400e-9c66-43652617106b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition: null
+            fieldUid: e6bfc2fd-cd9e-499e-bc06-df04d45cc290 # Hero Content
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ff4dc44-e6e1-4530-8425-90a0c377797b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition: null
+            fieldUid: 4241c972-672c-4e81-978e-d720e8c6be1a # Hero Background Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65c74752-e927-48e4-b277-88ddb6134c08
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition: null
+            fieldUid: 551e8c39-fe45-4b21-b144-ceeda2b15ad4 # Background Color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 90b62a6e-20dd-40e7-ab8c-f1a0ddd98f96
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 211cf806-db73-4b80-9926-5e26a4652c30 # Hero Type
+                  layoutElementUid: 195aa3fb-dca8-400e-9c66-43652617106b
+                  operator: in
+                  uid: 2580d45d-6e14-443e-8a5b-de8f7b9a5dc6
+                  values:
+                    - general
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: fc82eb85-bb31-4257-9760-692419787d23 # Hero Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28d1f75f-9f05-4d3f-a083-2e3f4975d44b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 211cf806-db73-4b80-9926-5e26a4652c30 # Hero Type
+                  layoutElementUid: 195aa3fb-dca8-400e-9c66-43652617106b
+                  operator: in
+                  uid: d14d7c74-d7a4-4ecd-a2a3-92cef51577e1
+                  values:
+                    - general
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: 888140e3-670b-4481-aa4e-7eb5a4261e99 # Link Label
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db2a7cfd-d1af-4332-882d-acb7b0d1cf24
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T08:27:56+00:00'
+            elementCondition:
+              class: craft\elements\conditions\entries\EntryCondition
+              conditionRules:
+                -
+                  class: craft\fields\conditions\OptionsFieldConditionRule
+                  fieldUid: 211cf806-db73-4b80-9926-5e26a4652c30 # Hero Type
+                  layoutElementUid: 195aa3fb-dca8-400e-9c66-43652617106b
+                  operator: in
+                  uid: fa0b86de-cf5a-423f-8e93-80d80b7c6b4d
+                  values:
+                    - general
+              elementType: craft\elements\Entry
+              fieldContext: global
+            fieldUid: f1788a9b-5962-4924-ad01-a4f2bdf1b5e3 # Action
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d6b53230-5af2-4a11-b7ad-25cbfc6401e9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Hero
+        uid: 7c001af1-88aa-47a0-a86b-551828a82547
+        userCondition: null
+handle: pages
+hasTitleField: true
+icon: null
+name: Pages
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

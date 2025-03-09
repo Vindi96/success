@@ -1,0 +1,133 @@
+.features {
+    @apply pt-15 pb-5;
+    // box-shadow: inset 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+
+    &__title {
+        @apply mb-8 max-w-[720px] mx-auto text-center;
+
+        h2 {
+            @apply mb-0 text-secondary-900;;
+        }
+    }
+
+    &__desc {
+        @apply text-center mb-8;
+
+        p {
+            @apply font-light;
+        }
+    }
+
+    &__action {
+        @apply text-center mb-6;
+    }
+
+    &__list {
+        @apply pt-11;
+    }
+
+    .feature {
+        @apply mb-10;
+
+        &__wrap {
+            @apply bg-gray-50 rounded-2xl py-8 px-6 text-center h-full block;
+            
+        }
+
+        &__wrap__link {
+            @apply transition-transform duration-300 ease-out;
+            will-change: transform;
+            transform-origin: center;
+            
+            &:hover {
+                @apply shadow-lg;
+                transform: scale(1.03) translateY(-2px);
+            }
+        
+            // Prevent text from scaling
+            * {
+                transform: scale(1);
+            }
+        }
+
+        &__body {
+            p {
+                @apply font-light;
+                
+            }
+        }
+
+        &__icon {
+            @apply mb-5;
+
+            img {
+                @apply mx-auto;
+            }
+        }
+
+        &__title {
+            @apply mb-5;
+            h3 {
+                @apply mb-0;
+            }
+        }
+    }
+
+
+    @screen lg {
+        &__desc {
+            @apply mb-14;
+
+            p {
+                @apply text-h3;
+            }
+        }
+
+        &__list {
+            @apply pt-22 flex flex-wrap -mx-3 justify-center;
+        }
+
+        .feature {
+            @apply w-1/2 px-3;
+
+            &__title {
+                @apply mb-9;
+
+                h3 {
+                    @apply text-h1;
+                }
+            }
+
+            &__body {
+                p {
+                    @apply text-h3;
+                    line-height:1.66;
+                }
+            }
+
+            &__icon {
+                @apply mb-8;
+            }
+        }
+    }
+
+    @screen xl {
+        @apply pt-30 pb-20;
+        &__desc {
+            p {
+                @apply text-sp;
+            }
+        }
+
+        .feature {
+            @apply w-1/3;
+
+            &__body {
+                p {
+                    @apply text-h2;
+                    line-height: 1.66;
+                }
+            }
+        }
+    }
+}

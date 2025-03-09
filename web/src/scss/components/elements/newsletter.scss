@@ -1,0 +1,75 @@
+.newsletter {
+    @apply text-center relative text-white;
+
+    &__btn {
+        .btn {
+            @apply text-sm;
+
+            &:hover {
+                @apply bg-transparent text-white border-white;
+            }
+        }
+        p {
+            @apply text-h5 mb-0 mt-2 italic;
+        }
+    }
+
+    &__input {
+       
+
+        input {
+            @apply border-0 h-16 mb-0 font-semibold mb-5 bg-white h-[68px] px-5;
+            border-radius: 34px;
+        }
+
+        .btn {
+            @apply px-8 py-[14px] font-semibold min-w-[185px] uppercase;
+        }
+    }
+
+    &__bg {
+        @apply absolute w-full h-full top-0 left-0 z-[-2];
+    
+        img {
+            @apply w-full h-full object-cover object-center;
+        }
+    }
+    
+    &__overlay {
+        @apply w-full h-full bg-[#226565] top-0 left-0 absolute;
+        opacity: 80%;
+    }
+
+    &__title {
+        @apply mb-8 max-w-[800px] mx-auto;
+
+        h2 {
+            @apply mb-0;
+        }
+    }
+
+    &__desc {
+        @apply mb-8 max-w-[800px] mx-auto;
+    }
+
+    @screen lg {
+        &__desc {
+            @apply mb-14;
+        }
+        
+        &__input {
+            @apply flex bg-white h-[68px] items-center max-w-[676px] mx-auto pl-5 pr-1 mb-6;
+            border-radius: 34px;
+
+            input {
+                @apply mb-0 pr-0 pl-1;
+                &:invalid:focus {
+                    @apply  bg-transparent;
+                }
+            }
+        }
+        .btn {
+            @apply text-h2;
+        }
+    }
+}

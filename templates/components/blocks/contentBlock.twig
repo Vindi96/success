@@ -1,0 +1,17 @@
+{% set title = theBlock.blockTitle %}
+{% set desc = theBlock.description %}
+
+<div class="content element--py">
+    <div class="container">
+        {% if title %}
+            <div class="content__title blockTitle" data-fadein>
+                {{title}}
+            </div>
+        {% endif %}
+        {% if desc %}
+            <div class="content__desc typography" data-fadein>
+                {{desc}}
+            </div>
+        {% endif %}
+    </div>
+</div>

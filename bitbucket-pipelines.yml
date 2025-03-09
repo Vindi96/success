@@ -1,0 +1,25 @@
+image: madshansen/docker-git-ftp:latest
+pipelines:
+  custom:
+    a.staging:
+      - step:
+          name: "Staging deployment"
+          deployment: staging
+          script:
+            - pipe: atlassian/rsync-deploy:0.7.0
+              variables:
+                USER: $STAGING_USERNAME
+                SERVER: $STAGING_HOST
+                REMOTE_PATH: '/home/${STAGING_USERNAME}/public_html'
+                LOCAL_PATH: '${BITBUCKET_CLONE_DIR}/'
+                EXTRA_ARGS: '--exclude web/assets/ --exclude vendor/ --exclude .env --exclude .user.ini --exclude php.ini'
+            - pipe: atlassian/ssh-run:0.4.0
+              variables:
+                SSH_USER: $STAGING_USERNAME
+                SERVER: $STAGING_HOST
+                COMMAND: 'cd /home/${STAGING_USERNAME}/public_html && composer install --no-interaction --prefer-dist'
+            - pipe: atlassian/ssh-run:0.4.0
+              variables:
+                SSH_USER: $STAGING_USERNAME
+                SERVER: $STAGING_HOST
+                COMMAND: ' chmod -R 644 /home/${STAGING_USERNAME}/public_html/web/index.php && chmod -R 0755 /home/${STAGING_USERNAME}/public_html/'

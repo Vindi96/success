@@ -1,0 +1,75 @@
+columnSuffix: null
+handle: body
+instructions: "Add the blocks \r\n"
+name: Body
+searchable: false
+settings:
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 7331064b-1755-4e8d-82c2-a07bd5bbe536 # Features
+    -
+      __assoc__:
+        -
+          - uid
+          - 13729df8-c4f6-41e5-b1d7-db5562a96ce9 # Content Block
+    -
+      __assoc__:
+        -
+          - uid
+          - d7c80695-dbec-4b61-9c97-5924ade8b37b # Body
+    -
+      __assoc__:
+        -
+          - uid
+          - 25a96b91-40ac-48db-aa84-b259cd853565 # CTA
+    -
+      __assoc__:
+        -
+          - uid
+          - 2249dcb4-6e67-4538-8c27-286815e60053 # FAQ
+    -
+      __assoc__:
+        -
+          - uid
+          - 83b0ba24-dcfb-4156-9fd1-5e66137353e5 # Image Content
+    -
+      __assoc__:
+        -
+          - uid
+          - b977aa93-cf63-41f6-9bd4-fbc734fcc15f # Letter
+    -
+      __assoc__:
+        -
+          - uid
+          - 6b8cb363-8920-4951-932e-4981d121beca # Faqs
+    -
+      __assoc__:
+        -
+          - uid
+          - 823593af-a1d8-45e7-85ed-e0f6ccf065b7 # Newsletter
+    -
+      __assoc__:
+        -
+          - uid
+          - 5fbf33b2-a6c7-459e-b767-95a418bc84a4 # Pathways
+    -
+      __assoc__:
+        -
+          - uid
+          - c457febd-b816-4427-9b6c-cad739f4f99f # Testimonial Block
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: 50
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

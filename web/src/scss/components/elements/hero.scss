@@ -1,0 +1,116 @@
+.hero {
+  @apply text-center relative;
+
+  box-shadow: inset 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+
+  &__logo {
+    @apply max-w-[228px] mx-auto mb-2;
+  }
+
+  &--general {
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.04);
+  }
+
+  &__title {
+    @apply text-secondary-900;
+    
+    h1 {
+      @apply mb-0 text-secondary-900;
+
+      u {
+        @apply underline;
+        text-decoration-color: #EABDE6;
+      }
+
+      span, code {
+        @apply relative font-copy;
+        
+
+        &:after {
+          @apply absolute top-0 right-0 bg-auto bg-no-repeat bg-left w-full h-full;
+          content: '';
+          z-index: -1;
+          // background-image: url("../images/vector.svg");
+        }
+      }
+    }
+  }
+
+  &--bg {
+    @apply bg-gray-50;
+  }
+
+  &__bg {
+    @apply absolute w-full h-full top-0 left-0;
+
+    img {
+        @apply w-full h-full object-cover object-center;
+    }
+  }
+
+  &__overlay {
+    @apply w-full h-full bg-white top-0 left-0 absolute;
+    opacity: 80%;
+  }
+
+  &__vector__one {
+    @apply absolute top-[50px] left-[192px] z-[-2] max-w-[80px];
+  }
+
+  &__vector__two {
+    @apply absolute top-3 right-16 z-[-2] max-w-[80px];
+  }
+
+  &__desc {
+    @apply mt-6;
+    p {
+      @apply font-light mb-0;
+    }
+  }
+
+  &__action {
+    p {
+      @apply text-h5 text-gray-600 mb-6 mt-2 italic;
+    }
+
+    .btn {
+        @apply mt-5;
+    }
+  }
+
+  @screen md {
+
+    &__desc {
+      p {
+        @apply text-h3;
+      }
+    }
+  }
+
+  @screen xl {
+
+    &__desc {
+        @apply mt-12;
+        p {
+            @apply text-sp;
+        }
+    }
+
+    &__title {
+      h1 {
+        span, code {
+          &:after {
+            @apply top-[10px] right-[-26px];
+          }
+        }
+      }
+    }
+
+    &__action {
+        .btn {
+            @apply mt-9;
+        }
+    }
+
+  }
+}

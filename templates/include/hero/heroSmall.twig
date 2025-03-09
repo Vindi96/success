@@ -1,0 +1,25 @@
+
+<div class="hero {% if heroBackgroundColor | length %}hero--bg{% endif %} element--py">
+    {% if heroBackgroundImage %}
+        {% for img in heroBackgroundImage %}
+            <div class="hero__bg">
+                <img data-src={{ img.url }} src="dist/images/placeholder.jpeg" alt="hero" class="lazy" />
+                <div class="hero__overlay"></div>
+            </div> 
+        {% endfor %}
+    {% endif %}
+    <div class="container">
+        <div class="hero__wrap">
+            {% if heroTitle %}
+                <div class="hero__title" data-fadein>
+                    {{heroTitle}} 
+                </div>
+            {% endif %}
+            {% if heroDesc %}
+                <div class="hero__desc typography" data-fadein>
+                    {{heroDesc}}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

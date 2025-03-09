@@ -1,0 +1,104 @@
+dateModified: 1740733158
+email:
+  fromEmail: admin@gmail.com
+  fromName: isgb
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    0b354c62-a8fe-4cc6-a992-1912213e8cbd: SEO # SEO
+    0d0ecc9d-adc1-4ab6-8a37-0f741941f1d8: Pathway # Pathway
+    1b68fbf3-875d-46b5-afea-63ef1a4c9a4f: 'Blog  Page' # Blog  Page
+    1d97dfdc-6f99-4f57-b07f-a648feea5291: 'Login Link' # Login Link
+    2b370cdf-a912-4023-9118-3e32e4bc29dd: 'Index Page' # Index Page
+    2fc0cbf3-d48d-4c6d-9bf4-612176a0d9da: Date # Date
+    3f660088-cf39-4fcf-b910-c6301a428916: Letter # Letter
+    4e0f26b3-1702-4777-88c5-53bf90392f45: 'Footer Links' # Footer Links
+    5fbf33b2-a6c7-459e-b767-95a418bc84a4: Pathways # Pathways
+    6b8cb363-8920-4951-932e-4981d121beca: Faqs # Faqs
+    8a15b0ad-17fa-4ec7-936e-1e2497e8d030: Pages # Pages
+    8aaf57d4-5a17-4370-8974-0262bc11f3bd: Faqs # Faqs
+    8ae091d4-9fdd-47f5-b698-e76230bd8434: 'Hero Title' # Hero Title
+    9d8cb4f7-dd5d-4609-8b93-7b945b1601bb: Blogs # Blogs
+    14fe2503-3301-437d-9eba-a7cfe58b9696: Menu # Menu
+    16adacb7-63f4-4eaf-995a-6c6a3b961524: Answer # Answer
+    25a96b91-40ac-48db-aa84-b259cd853565: CTA # CTA
+    45a6072e-cc78-484c-a69b-66e2d73472b9: Blogs # Blogs
+    048e264e-c123-4ecb-8355-a57026d6627a: Uploads # Uploads
+    056f3410-3dd1-420e-87f6-d1c592fc72cc: Header # Header
+    57b13ef5-778d-4dc5-937b-1d8d8c0944a0: Description # Description
+    58b5afe0-1950-408f-8224-cb1d2d1bea68: 'Features Cards' # Features Cards
+    83b0ba24-dcfb-4156-9fd1-5e66137353e5: 'Image Content' # Image Content
+    90c9426c-a497-4f0c-bf47-43c2967e5b13: 'Blog Page' # Blog Page
+    94a07baa-6231-46eb-ad90-dc9b654e656f: 'Menu Link' # Menu Link
+    211cf806-db73-4b80-9926-5e26a4652c30: 'Hero Type' # Hero Type
+    469bae0b-de10-4849-9dd1-a77f08e9cadd: 'Blog Title' # Blog Title
+    480b27ed-ab52-4d46-9b4f-d4a706c3d3d8: isgb # isgb
+    551e8c39-fe45-4b21-b144-ceeda2b15ad4: 'Background Color' # Background Color
+    735e60a0-6680-4f30-903b-3e29e330aa4d: Simple # Simple
+    932ae628-f4d7-4209-8748-c29f51dc2574: Testimonial # Testimonial
+    955b4347-48fc-4fa3-a21f-e53a49769fcf: Footer # Footer
+    2249dcb4-6e67-4538-8c27-286815e60053: FAQ # FAQ
+    4241c972-672c-4e81-978e-d720e8c6be1a: 'Hero Background Image' # Hero Background Image
+    7370d11b-cd18-4480-b1cd-633b7520b344: Pages # Pages
+    13729df8-c4f6-41e5-b1d7-db5562a96ce9: 'Content Block' # Content Block
+    51676c5e-3935-4be6-a23f-d804456bf885: Feature # Feature
+    823593af-a1d8-45e7-85ed-e0f6ccf065b7: Newsletter # Newsletter
+    888140e3-670b-4481-aa4e-7eb5a4261e99: 'Link Label' # Link Label
+    5680131d-c065-48f1-9768-1b7364cd1e6a: Custom # Custom
+    7331064b-1755-4e8d-82c2-a07bd5bbe536: Features # Features
+    a08d2a3f-2a40-43ea-ab7c-46ea722a9695: Testimonials # Testimonials
+    a1eb9028-e06d-463d-8ac8-2e69dcda05b2: Body # Body
+    a377baab-a8c7-429b-a8e9-3cd4137344a7: isgb # isgb
+    ac33fd38-cd92-436e-b5b6-2770850dec5e: 'Footer Link' # Footer Link
+    ae6c05a1-0763-4c87-9850-9b2e9c2ccb61: Menu # Menu
+    b3eedc02-a7a1-4d79-a356-498c1fee15d4: Pathways # Pathways
+    b8dbd6fa-4a3b-4e74-b1db-0789bfabec49: 'Site Logo' # Site Logo
+    b96e3c56-ebb1-4e34-8e4f-99b97045a1fd: 'Link Small Text' # Link Small Text
+    b977aa93-cf63-41f6-9bd4-fbc734fcc15f: Letter # Letter
+    c0c48b0e-a280-45bd-a7ac-a84c5be281d8: 'Blog Title' # Blog Title
+    c47dab4f-cbc3-4e05-a6bb-a1369d6d1ccc: Home # Home
+    c457febd-b816-4427-9b6c-cad739f4f99f: 'Testimonial Block' # Testimonial Block
+    cc521ec9-8202-410e-93e9-45056cc32b01: 'Footer Bottom' # Footer Bottom
+    cda754a5-b871-4f77-bc5c-48c171f5cf9a: Author # Author
+    cf56d779-1cfc-41e2-98b8-fe537fcb41ac: 'Background Image' # Background Image
+    d7c80695-dbec-4b61-9c97-5924ade8b37b: Body # Body
+    d56f45ae-7219-4e41-b46f-6fd4550d0e42: Testimonial # Testimonial
+    d72221be-33bf-4477-9a8e-00df49436e71: 'h3 content only' # h3 content only
+    d643786d-e7a9-4d3a-a1e9-64cd50dc0865: 'Block Title' # Block Title
+    e6a27b0e-e9cd-4f0b-abbe-f96b25788b36: 'Footer Links' # Footer Links
+    e6bfc2fd-cd9e-499e-bc06-df04d45cc290: 'Hero Content' # Hero Content
+    e57f9baa-8386-4cf8-a14f-350c56e0893a: 'Reverse Content' # Reverse Content
+    e6392563-85be-49bb-b8b3-3efdf6f7852c: Image # Image
+    f1788a9b-5962-4924-ad01-a4f2bdf1b5e3: Action # Action
+    fb9caff9-f9b6-405b-a495-283658dcd729: 'Card Icon' # Card Icon
+    fc82eb85-bb31-4257-9760-692419787d23: 'Hero Image' # Hero Image
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+system:
+  edition: solo
+  live: true
+  name: isgb
+  schemaVersion: 5.6.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

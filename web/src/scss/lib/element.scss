@@ -1,0 +1,11 @@
+.element {
+    &--py {
+        @apply py-15;
+    }
+
+    @screen xl {
+        &--py {
+            @apply py-30;
+        } 
+    }
+}

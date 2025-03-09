@@ -1,0 +1,20 @@
+{
+    "/web/dist/js/app.min.js": "/web/dist/js/app.min.js",
+    "/web/dist/css/app.css": "/web/dist/css/app.css",
+    "/web/dist/css/base.css": "/web/dist/css/base.css",
+    "/web/dist/images/caret.svg": "/web/dist/images/caret.svg",
+    "/web/dist/images/cta.png": "/web/dist/images/cta.png",
+    "/web/dist/images/hero-img.png": "/web/dist/images/hero-img.png",
+    "/web/dist/images/hero.png": "/web/dist/images/hero.png",
+    "/web/dist/images/image.png": "/web/dist/images/image.png",
+    "/web/dist/images/james.png": "/web/dist/images/james.png",
+    "/web/dist/images/placeholder.jpeg": "/web/dist/images/placeholder.jpeg",
+    "/web/dist/images/placeholder.png": "/web/dist/images/placeholder.png",
+    "/web/dist/images/rect-one.svg": "/web/dist/images/rect-one.svg",
+    "/web/dist/images/rect-two.svg": "/web/dist/images/rect-two.svg",
+    "/web/dist/images/rocket.svg": "/web/dist/images/rocket.svg",
+    "/web/dist/images/secure.svg": "/web/dist/images/secure.svg",
+    "/web/dist/images/share.svg": "/web/dist/images/share.svg",
+    "/web/dist/images/vector.svg": "/web/dist/images/vector.svg",
+    "/web/dist/images/video.svg": "/web/dist/images/video.svg"
+}

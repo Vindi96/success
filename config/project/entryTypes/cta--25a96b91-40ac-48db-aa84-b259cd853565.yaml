@@ -1,0 +1,131 @@
+color: cyan
+fieldLayouts:
+  4b9766b4-73a8-4f2a-8f69-779b7c48b536:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-17T09:27:11+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 9b31571e-ea79-4ed9-8960-1a08da081d47
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-17T09:29:05+00:00'
+            elementCondition: null
+            fieldUid: 57b13ef5-778d-4dc5-937b-1d8d8c0944a0 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 666b2808-de33-4957-8c66-81de65f84728
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-17T09:32:39+00:00'
+            elementCondition: null
+            fieldUid: 888140e3-670b-4481-aa4e-7eb5a4261e99 # Link Label
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6633727-2794-4a9a-83b0-edc0a1967219
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-17T09:32:39+00:00'
+            elementCondition: null
+            fieldUid: f1788a9b-5962-4924-ad01-a4f2bdf1b5e3 # Action
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d8caff9f-ca2f-4a58-952d-db6fcf1d893e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-17T09:35:05+00:00'
+            elementCondition: null
+            fieldUid: b96e3c56-ebb1-4e34-8e4f-99b97045a1fd # Link Small Text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 67667063-2066-4152-8412-ccfd2f003f28
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-18T05:33:34+00:00'
+            elementCondition: null
+            fieldUid: cf56d779-1cfc-41e2-98b8-fe537fcb41ac # Background Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4680e2d5-1e49-46d5-b947-217c8f6ad2e2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f188d841-1767-4bfc-b2f0-bd6be8207f68
+        userCondition: null
+handle: cta
+hasTitleField: true
+icon: arrow-right-from-bracket
+name: CTA
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,99 @@
+color: null
+fieldLayouts:
+  5959cc77-3049-4c5e-97fc-b666fda4ecfc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-18T06:37:23+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 47b8c445-25ee-4a54-b30c-44709747773c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-18T06:39:01+00:00'
+            elementCondition: null
+            fieldUid: 57b13ef5-778d-4dc5-937b-1d8d8c0944a0 # Description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e6629fef-04a9-45e3-8a19-5fed86b379d1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-18T06:39:01+00:00'
+            elementCondition: null
+            fieldUid: 888140e3-670b-4481-aa4e-7eb5a4261e99 # Link Label
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68980d44-cc5c-40c3-bbaf-92df930a27d5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-18T06:39:01+00:00'
+            elementCondition: null
+            fieldUid: f1788a9b-5962-4924-ad01-a4f2bdf1b5e3 # Action
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 92ffea3b-38da-4c82-ae05-6454f68e8b2a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 3e715871-32f3-45fb-ace5-638f7a68fa8b
+        userCondition: null
+handle: pathway
+hasTitleField: true
+icon: null
+name: Pathway
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

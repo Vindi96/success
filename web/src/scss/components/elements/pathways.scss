@@ -1,0 +1,129 @@
+.pathways {
+    @apply py-15;
+
+    &__title {  
+        @apply mb-11;   
+        h2 {
+            @apply text-secondary-900 mb-0;
+        }
+    }
+
+    &__desc {
+        @apply mb-11;
+    }
+
+    &__action {
+        @apply mb-10;
+    }
+
+    .pathway {
+        @apply mb-6;
+
+        &__wrap {
+            @apply bg-gray-50 rounded-2xl py-8 px-6 text-center h-full block 
+                   transition-transform duration-300 ease-out shadow-sm;
+            will-change: transform;
+            transform-origin: center;
+            
+            &:hover {
+                @apply shadow-lg;
+                transform: scale(1.03) translateY(-2px);
+            }
+        
+            // Prevent text from scaling
+            * {
+                transform: scale(1);
+            }
+        }
+
+        &__btn {
+            .btn {
+                @apply uppercase;
+            }
+        }
+
+        &__body {
+            @apply mb-7;
+            p {
+                @apply font-light;
+            }
+        }
+
+        &__title {
+            @apply mb-5;
+            h3 {
+                @apply mb-0;
+            }
+        }
+
+        &:last-child {
+            @apply mb-0;
+        }
+    }
+
+    @screen lg {
+        @apply pb-9;
+
+        .pathway {
+            @apply w-1/2 px-3;
+
+            &__title {
+                @apply mb-9;
+
+                h3 {
+                    @apply text-h1;
+                }
+            }
+
+            &__body {
+                @apply mb-11;
+                p {
+                    @apply text-h3;
+                    line-height:1.66;
+                }
+            }
+
+            &__icon {
+                @apply mb-8;
+            }
+
+            &:last-child {
+                @apply mb-6;
+            }
+        }
+
+        &__list {
+            @apply pt-6 flex flex-wrap -mx-3 justify-center;
+        }
+    }
+
+
+    @screen xl {
+        @apply pt-30 pb-[96px];
+
+        // &__title {
+        //     @apply mb-16;
+        // }
+
+        &__action {
+            @apply mb-16;
+            .btn {
+                @apply my-6;
+            }
+        }
+
+        &__desc {
+            @apply mb-11;
+        }
+
+        .pathway {
+
+            &__body {
+                p {
+                    @apply text-h2;
+                    line-height:1.66;
+                }
+            }
+        }
+    }
+}

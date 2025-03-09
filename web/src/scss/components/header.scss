@@ -1,0 +1,77 @@
+
+header {
+    @apply h-[104px] py-5 fixed w-full top-0 bg-gray-50 z-[999];
+    box-shadow: 0px 4px 24px 0px rgba(0, 0, 0, 0.15);
+    @extend .transition;
+
+    .homePage & {
+        box-shadow: none;
+    }
+
+    .navbar {
+        .btn {
+            @apply min-h-[48px] text-sm min-w-[113px];
+        }
+
+        &__logo {
+            @apply max-w-[70px];
+        }
+    
+        &--desktop {
+            @apply hidden;
+        }
+    
+        &__menu--mobile {
+            @apply hidden bg-secondary-500 absolute left-0 z-10 p-5 w-full top-[104px] text-white font-medium text-h4;
+    
+            &.is-active {
+                @apply block;
+            }
+
+            .btn {
+                @apply border-white
+            }
+
+            li {
+                @apply mb-8;
+
+                &:last-child {
+                    @apply mb-0;
+                }
+            }
+        }
+    
+        &--mobile {
+            @apply flex justify-between items-center;
+        }
+    }
+
+    @screen md {
+        .navbar {
+            &--desktop {
+                @apply flex justify-between items-center;
+
+                ul {
+                    @apply flex items-center mb-0 -mx-[14px];
+                }
+
+                li {
+                    @apply mb-0 px-[14px] font-semibold;
+
+                    a {
+                        @extend .transition;
+
+                        &:hover {
+                            @apply text-secondary-500;
+                        }
+                    }
+                }
+            }
+
+            &--mobile {
+                @apply hidden;
+            }
+        }
+    }
+    
+}

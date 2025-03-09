@@ -1,0 +1,51 @@
+.cta {
+    @apply text-center relative text-white;
+
+    &__btn {
+        .btn {
+            @apply text-sm;
+
+            // &:hover {
+            //     @apply bg-transparent text-white border-white;
+            // }
+        }
+        p {
+            @apply text-h5 mb-6 mt-2 italic;
+        }
+    }
+
+    &__bg {
+        @apply absolute w-full h-full top-0 left-0 z-[-2];
+    
+        img {
+            @apply w-full h-full object-cover object-center;
+        }
+    }
+    
+    &__overlay {
+        @apply w-full h-full bg-[#226565] top-0 left-0 absolute;
+        opacity: 80%;
+    }
+
+    &__title {
+        @apply mb-8;
+
+        h2 {
+            @apply mb-0;
+        }
+    }
+
+    &__desc {
+        @apply mb-8;
+    }
+
+    @screen lg {
+        &__desc {
+            @apply mb-14;
+        }
+
+        .btn {
+            @apply text-h2;
+        }
+    }
+}

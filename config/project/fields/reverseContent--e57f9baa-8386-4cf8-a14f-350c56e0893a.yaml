@@ -1,0 +1,22 @@
+columnSuffix: null
+handle: reverseContent
+instructions: 'If you want the image to be on the left side, select the check box.'
+name: 'Reverse Content'
+searchable: false
+settings:
+  customOptions: false
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - ''
+        -
+          - value
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Checkboxes

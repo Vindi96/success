@@ -1,0 +1,61 @@
+{% extends "_layout/main" %}
+
+
+{% block main %}
+
+    {% include "include/hero"
+        with{
+        heroTitle: entry.heroTitle,
+        heroType: 'small',
+        heroDesc: entry.heroContent,
+        heroBackgroundColor: entry.backgroundColor,
+        heroBackgroundImage:entry.heroBackgroundImage.all()
+    }%}
+    {% set blogs = craft.entries.section('blogs').orderBy('date DESC') %}
+    {% paginate blogs as pageInfo, pageEntries %}
+
+    <div class="blogpage">
+        <div class="container">
+            <div class="blogpage__wrapper">
+                <div class="blogpage__cards ">
+                    {% for blog in pageEntries %}
+                        {% set date = blog.date|date('j F Y') %}
+                        {% set heading = blog.blogMainTitle %}
+                        {% set image = blog.image.one() %}
+                        {% set author = blog.blogAuthor %}
+                        <div class="blogpage__card detail-cards" >
+                            <div class="blogpage__card__wrapper" data-fadein>
+                                <a href="{{blog.url}}" class="blogpage__card__anchor">                                 
+                                    <div class="blogpage__card__img">
+                                        {% if image %}
+                                            <img data-src={{image.url}} src="dist/images/placeholder.jpeg" alt="blog" class="lazy">
+                                            {% else %}
+                                            <img src="dist/images/placeholder.jpeg" alt="" >
+                                        {% endif %}
+                                    </div>                                   
+                                    {% if date or author %}
+                                        <div class="blogpage__card__author">
+                                            <p>{% if date %}{{date}}{% endif %} {% if author %}- {{author}}{% endif %}</p>
+                                        </div>
+                                    {% endif %}
+                                    {% if heading %}
+                                        <div class="blogpage__card__title">
+                                            {{heading}}
+                                        </div>
+                                    {% endif %}
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %} 
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+    {% include "components/body" %} 
+
+
+{% endblock %}
+

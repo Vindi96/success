@@ -1,0 +1,19 @@
+.content {
+    &__title {  
+        @apply mb-12;   
+        h2 {
+            @apply text-secondary-900 mb-0;
+        }
+    }
+
+
+    @screen xl {
+        &__title {
+            @apply mb-16;
+        }
+
+        &__desc {
+            @apply mb-16;
+        }
+    }
+}

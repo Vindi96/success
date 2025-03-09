@@ -1,0 +1,40 @@
+{% set title = theBlock.blockTitle %}
+{% set desc = theBlock.description %}
+{% set faqs = theBlock.faqs.all() %}
+
+<div class="faq element--py">
+    <div class="container">
+        <div class="faq__wrapper">
+            {% if title %}
+                <div class="faq__title blockTitle" data-fadein>
+                    {{title}}
+                </div>
+            {% endif %}
+            {% if desc %}
+                <div class="faq__desc typography" data-fadein>
+                    {{desc}}
+                </div>
+            {% endif %}
+            {% if faqs %}
+                <div class="faq__faqs">
+                    {% for faq in faqs %}
+                        <div class="faq__item" data-fadein>
+                        <div class="faq__question">
+                            <div class="faq__question__wrap">
+                                <h3>{{faq.title}}</h3>
+                            </div>
+                            <div class="faq__question__caret">
+                                {% include "SVG/caret" %}
+                            </div>
+                        </div>
+                        <div class="faq__answer typography">
+                            {{faq.answer}}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+headingLevels:
+  - 3
+name: 'h3 content only'
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link
+  - code
+  - sourceEditing

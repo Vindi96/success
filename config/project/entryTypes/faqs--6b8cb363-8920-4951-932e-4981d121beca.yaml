@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  517343de-2014-40e9-a10c-15826022e9a7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-17T11:38:35+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: b11c18d9-de83-4c35-b917-9cef175569f1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-17T11:40:15+00:00'
+            elementCondition: null
+            fieldUid: 16adacb7-63f4-4eaf-995a-6c6a3b961524 # Answer
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cc408507-10b3-4008-be3e-8313a6b2c9ed
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d5196bf4-1178-46f4-9ac3-1714f9423ec9
+        userCondition: null
+handle: faqs
+hasTitleField: true
+icon: null
+name: Faqs
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,60 @@
+fieldLayouts:
+  f983671c-3921-4ee3-8e98-57c74210f3fd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-19T07:17:25+00:00'
+            elementCondition: null
+            fieldUid: b8dbd6fa-4a3b-4e74-b1db-0789bfabec49 # Site Logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e9af0b21-a9d6-46bf-9042-f6bd6108a331
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T07:17:25+00:00'
+            elementCondition: null
+            fieldUid: 14fe2503-3301-437d-9eba-a7cfe58b9696 # Menu
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0c8b61fa-e3c6-420f-9872-a4054bf6f335
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T07:55:13+00:00'
+            elementCondition: null
+            fieldUid: 1d97dfdc-6f99-4f57-b07f-a648feea5291 # Login Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 50e40f93-d4d9-40e0-94bb-2c11ff4a1589
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2a499907-c222-426b-bd51-b830586f620f
+        userCondition: null
+handle: header
+name: Header
+sortOrder: 1

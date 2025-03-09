@@ -1,0 +1,27 @@
+{% set blocks = body ?? entry.body.all() ?? [] %}
+
+{% if blocks | length %}
+
+    <section class="content-blocks">
+
+        {% for theBlock in blocks %}
+            {% set theBlockName =  theBlock.type.handle %}
+
+            {% include "components/blocks/" ~ theBlockName ignore missing with {
+                'theBlock' : theBlock,
+            } %}
+        {% endfor %}
+
+    </section>
+
+{% endif %}
+
+{# {% include "components/blocks/features" %}
+{% include "components/blocks/cta" %}
+{% include "components/blocks/letter" %}
+{% include "components/blocks/testimonials" %}
+{% include "components/blocks/newsletter" %}
+{% include "components/blocks/content" %}
+{% include "components/blocks/pathways" %}
+{% include "components/blocks/faq" %}
+{% include "components/blocks/imageContent" %} #}

@@ -1,0 +1,22 @@
+{% extends "_layout/main" %}
+
+
+{% block main %}
+
+    {% include "include/hero"
+        with{
+        heroTitle: entry.heroTitle,
+        heroType: entry.heroType,
+        heroDesc: entry.heroContent,
+        heroLinkLabel: entry.linkLabel,
+        heroBackgroundColor: entry.backgroundColor,
+        heroImage:entry.heroImage.all(),
+        heroBackgroundImage:entry.heroBackgroundImage.all(),
+        action :entry.action,
+        smallText: entry.linkSmallText    
+    }%}
+    {% include "components/body" %} 
+
+
+{% endblock %}
+

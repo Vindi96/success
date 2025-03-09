@@ -1,0 +1,64 @@
+<header>
+    <div class="container navbar">
+        <div class="navbar__wrapper navbar--desktop">
+            <div class="navbar__logo">
+                <a href="{{siteUrl}}">
+                    {% if header.siteLogo %}
+                        {% for img in header.siteLogo %}
+                            <img src={{ img.url }} alt="" >
+                        {% endfor %}
+                    {% else %}
+                        {% include "SVG/logo" %}
+                    {% endif %}
+                </a>
+            </div>
+            <div class="navbar__content__left">
+                <ul>
+                    {% for  menuItem in header.menu.all() %}
+                        <li class="navbar__item">
+                            <a href={{menuItem.menuLink.url}}>{{menuItem.title}}</a>
+                        </li>
+                    {% endfor %}
+                    {% if header.loginLink %}
+                        <li class="navbar__item">
+                            <a href="{{header.loginLink}}" class="btn">
+                                <span>LOGIN</span>
+                            </a>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar--mobile">
+            <div class="navbar__logo--mobile">
+                <a href="{{siteUrl}}">
+                    {% include "SVG/logo" %}
+                </a>
+            </div>
+            <div class="header__mobile__hamburger">
+                    <button class="hamburger hamburger--spin" type="button" aria-label="hamburger">
+                        <span class="hamburger-box">
+                          <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+            </div>
+        </div>
+
+        <div class="navbar__menu--mobile">
+            <ul>
+                {% for  menuItem in header.menu.all() %}
+                        <li class="navbar__item">
+                            <a href={{menuItem.menuLink.url}}>{{menuItem.title}}</a>
+                        </li>
+                {% endfor %}
+                {% if header.loginLink %}
+                    <li class="navbar__item">
+                        <a href="{{header.loginLink}}">Login</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+
+    </div>
+</header>

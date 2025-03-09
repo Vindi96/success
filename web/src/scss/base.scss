@@ -1,0 +1,33 @@
+// Base
+// Includes styles that hardly change and don't require compiling as often
+
+
+// Tailwind imports
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+//font-family: 'Rajdhani', sans-serif;
+
+// Base styles
+html, body {
+    // scroll-behavior: smooth;
+}
+
+html {
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: 180px;
+}
+
+body {
+    
+}
+
+// .container {
+//     @apply max-w-[1440px] px-4 mx-auto;
+
+//     @screen md {
+//         @apply px-5;
+//     }
+// }

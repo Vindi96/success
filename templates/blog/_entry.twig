@@ -1,0 +1,76 @@
+{% extends "index" %}
+
+
+{% block main %}
+
+    <div class="blogIndex__page">
+        {% include "include/hero"
+            with{
+            heroTitle: entry.heroTitle,
+            heroType: 'small',
+            heroDesc: entry.heroContent,
+            heroBackgroundColor: entry.backgroundColor,
+            heroBackgroundImage:entry.image.all()
+        }%}
+        {% set blogs = craft.entries.section('blogs').orderBy('date DESC').limit(3) %}
+        {% paginate blogs as pageInfo, pageEntries %}
+
+        <div class="blogIndex">
+            <div class="container">
+                <div class="blogIndex__wrapper">
+                    <div class="blogIndex__inner">
+                        {% if entry.blogSubTitle %}
+                            <div class="blogIndex__title" data-fadein>
+                                {{entry.blogSubTitle}}                     
+                            </div>
+                        {% endif %}
+                        {% if entry.description %}
+                            <div class="blogIndex__desc typography" data-fadein>
+                                {{entry.description}}
+                            </div>  
+                        {% endif %}                                            
+                    </div>                    
+                </div>
+            </div>
+            <div class="blogIndex__relatedProducts">
+                <div class="container">
+                    <div class="blogIndex__relatedProducts__cards">
+                        {% for blog in pageEntries %}
+                            {% set date = blog.date|date('j F Y') %}
+                            {% set heading = blog.blogMainTitle %}
+                            {% set image = blog.image.one() %}
+                            {% set author = blog.blogAuthor %}
+                            <div class="blogIndex__relatedProducts__card" data-fadein>
+                                <div class="blogIndex__relatedProducts__card__wrapper">
+                                    <a href="{{blog.url}}" class="blogIndex__relatedProducts__card__anchor">
+                                        <div class="blogIndex__relatedProducts__card__img">
+                                            {% if image %}
+                                                <img data-src={{image.url}} src="dist/images/placeholder.jpeg" alt="blog" class="lazy">
+                                                {% else %}
+                                                <img src="dist/images/placeholder.jpeg" alt="" >
+                                            {% endif %}
+                                        </div>
+                                        {% if date or author %}
+                                            <div class="blogIndex__relatedProducts__card__author">
+                                                <p>{% if date %}{{date}}{% endif %} {% if author %}- {{author}}{% endif %}</p>
+                                            </div>
+                                        {% endif %}
+                                    
+                                        {% if heading %}
+                                            <div class="blogIndex__relatedProducts__card__title">
+                                                {{heading}}
+                                            </div>
+                                        {% endif %}
+                                        
+                                    </a>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        {% include "components/body" %} 
+    </div>	
+{% endblock %}

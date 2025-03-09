@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 90c9426c-a497-4f0c-bf47-43c2967e5b13 # Blog Page
+handle: blogPage
+maxAuthors: 1
+name: 'Blog  Page'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  480b27ed-ab52-4d46-9b4f-d4a706c3d3d8: # isgb
+    enabledByDefault: true
+    hasUrls: true
+    template: blog/index.twig
+    uriFormat: blogpage
+type: single

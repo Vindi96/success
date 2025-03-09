@@ -1,0 +1,19 @@
+{% set title = theBlock.blockTitle %}
+{% set desc = theBlock.description %}
+
+<div class="testimonials">
+    <div class="container-">
+        {% if title %}
+            <div class="testimonials__title blockTitle" data-fadein>
+                {{title}}
+            </div>
+        {% endif %}
+        {% if desc %}
+            <div class="testimonials__intro typography" data-fadein>
+                {{desc}}
+            </div>
+        {% endif %}
+        
+        {% include "components/blocks/community/testimonials" %}
+    </div>
+</div>

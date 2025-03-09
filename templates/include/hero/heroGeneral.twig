@@ -1,0 +1,44 @@
+
+<div class="hero hero--general {% if heroBackgroundColor | length %}hero--bg{% endif %} element--py">
+    {% if heroBackgroundImage %}
+        {% for img in heroBackgroundImage %}
+            <div class="hero__bg">
+                <img src="dist/images/placeholder.jpeg" data-src={{ img.url }} alt="hero" class="lazy" />
+                <div class="hero__overlay"></div>
+            </div> 
+        {% endfor %}
+    {% endif %}
+    <div class="container">
+        <div class="hero__wrap">
+            {% if heroImage %}
+                {% for img in heroImage %}
+                    <div class="hero__logo" data-fadein>
+                        <img data-src={{ img.url }} src="dist/images/placeholder.jpeg" class="lazy" />
+                    </div>
+                {% endfor %}
+            {% endif %}
+            {% if heroTitle %}
+                <div class="hero__title" data-fadein>
+                    {{heroTitle}} 
+                </div>
+            {% endif %}
+            {% if heroDesc %}
+                <div class="hero__desc typography" data-fadein>
+                    {{heroDesc}}
+                </div>
+            {% endif %}
+            {% if action %}
+                <div class="hero__action" data-fadein>
+                    <a href="{{action.url}}" class="btn">
+                        {% if action %}
+                            <span>{{heroLinkLabel}}</span>
+                        {% else %}
+                            <span>{{action}}</span>
+                        {% endif %}
+                    </a>
+                    <p>{{smallText}}</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="footer">
+	<div class="container">
+		<div class="footer__wrap">
+			{% if footer.footerLinks %}
+				<ul>
+					{% for  link in footer.footerLinks.all() %}
+					<li>
+						<a href={link.footerLink.url}>{{link.title}}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			{% endif %}
+			{% if footer.footerBottom %}
+				<div class="footer__bottom">
+					{{footer.footerBottom}}
+				</div>
+			{% endif %}
+			
+		</div>
+	</div>
+</div>

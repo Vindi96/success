@@ -1,0 +1,46 @@
+* {
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+button {
+    &:focus {
+        outline: none !important;
+    }
+}
+
+html {
+    //@apply;
+}
+
+.main {
+    @apply mt-[104px];
+}
+
+body {
+ overflow-x: hidden;
+}
+
+$container-width: 1210px;
+
+.container {
+    @apply w-full px-5 mx-auto;
+    max-width: $container-width;
+}
+
+.container-{
+    @apply w-full px-5 mx-auto;
+    max-width: 1642px;
+
+    @screen lg {
+        @apply px-8;
+    }
+}
+
+.container-sp {
+    @apply w-full px-5 mx-auto;
+    max-width: 1235px;
+}

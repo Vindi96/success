@@ -1,0 +1,44 @@
+fieldLayouts:
+  41f8de70-270e-4885-acf0-5862d96176c7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-02-19T07:38:54+00:00'
+            elementCondition: null
+            fieldUid: 4e0f26b3-1702-4777-88c5-53bf90392f45 # Footer Links
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 22489c78-13bb-4a86-b6cb-110a5be7c8c0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T07:38:54+00:00'
+            elementCondition: null
+            fieldUid: cc521ec9-8202-410e-93e9-45056cc32b01 # Footer Bottom
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a04a68d3-3120-4a95-af1f-dbf653bff9a1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4529c0b4-636d-4f13-b70a-813910473b48
+        userCondition: null
+handle: footer
+name: Footer
+sortOrder: 2

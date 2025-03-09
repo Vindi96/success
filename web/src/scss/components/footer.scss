@@ -1,0 +1,54 @@
+.footer {
+  @apply bg-gray-50 py-15;
+
+  ul {
+    @apply font-semibold font-copy mb-6;
+
+    li {
+      a {
+        @apply text-sm;
+        @extend .transition;
+
+        &:hover {
+          @apply text-secondary-500;
+        }
+      }
+    }
+  }
+
+  a {
+    @extend .transition;
+
+    &:hover {
+      @apply text-secondary-500;
+    }
+  }
+
+  &__bottom {
+    p {
+      @apply mb-0 text-xsm font-normal;
+    }
+  }
+
+  @screen md {
+    @apply pt-30 pb-[73px] text-left;
+
+    ul {
+      @apply flex items-center -mx-2 mb-6;
+
+      li {
+        @apply mb-0 px-2;
+
+        a {
+          @apply pr-4 border-r border-black py-[2px] h-5 block;
+        }
+
+        &:last-child {
+          a {
+            @apply border-0;
+          }
+        }
+      }
+    }
+  }
+}

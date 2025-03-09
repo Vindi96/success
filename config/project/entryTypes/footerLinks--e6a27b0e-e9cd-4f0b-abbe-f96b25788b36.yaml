@@ -1,0 +1,67 @@
+color: null
+fieldLayouts:
+  c440a7cb-1144-4ffb-91a0-240d4d8aa8d2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-02-19T07:34:56+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: true
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 56254ce1-d255-45f8-9bf3-6cebfb102642
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-02-19T07:36:41+00:00'
+            elementCondition: null
+            fieldUid: ac33fd38-cd92-436e-b5b6-2770850dec5e # Footer Link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65a525cc-7a79-4db1-aa1a-10451b464a9e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 61ba9fa9-1759-4526-8fb5-71a15a197d48
+        userCondition: null
+handle: footerLinks
+hasTitleField: true
+icon: null
+name: 'Footer Links'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

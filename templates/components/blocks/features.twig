@@ -1,0 +1,74 @@
+{% set title = theBlock.blockTitle %}
+{% set desc = theBlock.description %}
+{% set action = theBlock.action %}
+{% set actionLabel = theBlock.linkLabel %}
+{% set features = theBlock.featuresCards.all() %}
+
+<div class="features">
+    <div class="container">
+        {% if title %}
+            <div class="features__title" data-fadein>
+                {{title}}
+            </div>
+        {% endif %}
+        {% if desc %}
+            <div class="features__desc typography" data-fadein>
+                {{desc}}
+            </div>
+        {% endif %}
+        {% if action %}
+            <div class="features__action">
+                <a href="{{action.url}}" class="btn"><span>{{actionLabel}}</span></a>
+            </div>
+        {% endif %}
+              
+    </div>
+    <div class="container-">
+        {% if features %}
+            <div class="features__list">
+                {% for feature in features %}
+                   <div class="feature" data-fadein>
+                     {% if feature.action %}
+                        <a href="{{feature.action}}" class="feature__wrap feature__wrap__link">
+                            {% for icon in feature.cardIcon %}
+                                <div class="feature__icon">
+                                    <img src={{ icon.url }} alt="">
+                                </div>
+                            {% endfor %}
+                            {% if feature.title %}
+                               <div class="feature__title">
+                                    <h3>{{feature.title}}</h3>
+                                </div> 
+                            {% endif %}
+                            {% if feature.description %}
+                                <div class="feature__body typography">
+                                    {{feature.description}}
+                                </div>
+                            {% endif %}
+                        </a>
+                        {% else %}
+                        <div class="feature__wrap">
+                            {% for icon in feature.cardIcon %}
+                                <div class="feature__icon">
+                                    <img src={{ icon.url }} alt="">
+                                </div>
+                            {% endfor %}
+                            {% if feature.title %}
+                               <div class="feature__title">
+                                    <h3>{{feature.title}}</h3>
+                                </div> 
+                            {% endif %}
+                            {% if feature.description %}
+                                <div class="feature__body typography">
+                                    {{feature.description}}
+                                </div>
+                            {% endif %}
+                        </div>
+                     {% endif %}
+                        
+                    </div> 
+                {% endfor %}
+            </div>
+        {% endif %}  
+    </div>
+</div>
